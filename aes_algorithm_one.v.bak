@@ -1,0 +1,47 @@
+module aes_algorithm(clock,initial_state,final_state);
+	input clock;
+	input [127:0] initial_state;
+	
+	reg [127:0] cipher_key
+	=128'h2b28ab097eaef7cf15d2154f16a6883c;
+	reg [127:0] round_key1;
+	
+	wire [127:0] in_state;
+	wire [127:0] out_state;
+	
+	reg [127:0] in2_state;
+	reg [127:0] out2_state;
+
+	output [127:0] final_state;
+	
+	reg round=4'd0;
+	
+
+	
+	//if(round == 0) begin 
+	// INITIAL ROUND // 
+	
+	// Add RoundKEY(CIPher_key)
+//	add_round_key ADD_CIPHER_KEY(initial_state,out_state,cipher_key);
+	add_round_key ADD_CIPHER_KEY(initial_state,out2_state,cipher_key);
+	//add_round_key2 ADD_CIPHER_KEY(initial_state,out2_state,cipher_key);
+	// CLEAR //
+	
+	// ROUND 1//
+	//round_function ROUND1(in_state,out_state,round_key1);
+	//output_to_input CONVERT1(out_state,in_state);
+	
+	// ROUND 1-1 SUBBYTES //
+	//output_to_input CONVERT1(out_state,in_state);
+	//SubBytes SB1(in_state,out_state);
+	//SubBytes2 SB1(in_state,final_state);
+	// CLEAR //
+	//shift_rows SR1(in_state,out_state);
+	//output_to_input CONVERT2(out_state,in_state);
+	//shift_rows SR1(in_state,final_state);
+	//output_to_input CONVERT2(out_state,in_state);
+//	SubBytes SB2(out_state,final_state);
+	//shift_rows SR1(out_state,final_state);
+
+
+endmodule

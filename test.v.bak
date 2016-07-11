@@ -1,0 +1,23 @@
+module test;
+	reg clock;
+	reg [127:0] in_state;
+	wire [127:0] final_state;
+	
+	
+	//aes_algorithm(clock,in_state,final_state);;
+	aes_algorithm AES(clock,in_state,final_state);
+	
+	always #20 clock =~clock;
+	
+	
+	
+	initial begin
+		clock = 1;
+		in_state=128'h328831e0435a3137f6309807a88da234;
+		
+	
+		
+	end
+		
+	
+endmodule

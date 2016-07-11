@@ -1,0 +1,134 @@
+Flow report for aes_algorithm_one
+Sun Jun 19 05:34:19 2016
+Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Flow Summary                                                                    ;
++------------------------------------+--------------------------------------------+
+; Flow Status                        ; Analyzed - Sun Jun 19 05:34:19 2016        ;
+; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
+; Revision Name                      ; aes_algorithm_one                          ;
+; Top-level Entity Name              ; aes_algorithm_one                          ;
+; Family                             ; Cyclone IV GX                              ;
+; Total logic elements               ; 7,173 / 49,888 ( 14 % )                    ;
+;     Total combinational functions  ; 6,976 / 49,888 ( 14 % )                    ;
+;     Dedicated logic registers      ; 867 / 49,888 ( 2 % )                       ;
+; Total registers                    ; 867                                        ;
+; Total pins                         ; 257 / 343 ( 75 % )                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0 / 2,562,048 ( 0 % )                      ;
+; Embedded Multiplier 9-bit elements ; 0 / 280 ( 0 % )                            ;
+; Total GXB Receiver Channel PCS     ; 0 / 8 ( 0 % )                              ;
+; Total GXB Receiver Channel PMA     ; 0 / 8 ( 0 % )                              ;
+; Total GXB Transmitter Channel PCS  ; 0 / 8 ( 0 % )                              ;
+; Total GXB Transmitter Channel PMA  ; 0 / 8 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 8 ( 0 % )                              ;
+; Device                             ; EP4CGX50DF27C6                             ;
+; Timing Models                      ; Final                                      ;
++------------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 06/19/2016 04:54:13 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; aes_algorithm_one   ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                  ;
++-------------------------------------+------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                        ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 121374251214.146627965305144 ; --            ; --          ; --             ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR       ; simulation/modelsim          ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                         ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)       ; <None>        ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                     ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING        ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                       ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                 ; --            ; --          ; --             ;
++-------------------------------------+------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:15:55     ; 1.0                     ; 1545 MB             ; 00:09:18                           ;
+; Fitter                    ; 00:02:33     ; 1.0                     ; 1089 MB             ; 00:02:31                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 594 MB              ; 00:00:06                           ;
+; TimeQuest Timing Analyzer ; 00:00:10     ; 1.0                     ; 668 MB              ; 00:00:09                           ;
+; EDA Netlist Writer        ; 00:00:13     ; 1.0                     ; 602 MB              ; 00:00:11                           ;
+; Design Assistant          ; 00:00:04     ; 1.0                     ; 540 MB              ; 00:00:04                           ;
+; Total                     ; 00:19:01     ; --                      ; --                  ; 00:12:19                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; HEOBINAA35       ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; HEOBINAA35       ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; HEOBINAA35       ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; HEOBINAA35       ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; HEOBINAA35       ; Windows 7 ; 6.2        ; x86_64         ;
+; Design Assistant          ; HEOBINAA35       ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off aes_algorithm_one -c aes_algorithm_one
+quartus_fit --read_settings_files=off --write_settings_files=off aes_algorithm_one -c aes_algorithm_one
+quartus_asm --read_settings_files=off --write_settings_files=off aes_algorithm_one -c aes_algorithm_one
+quartus_sta aes_algorithm_one -c aes_algorithm_one
+quartus_eda --read_settings_files=off --write_settings_files=off aes_algorithm_one -c aes_algorithm_one
+quartus_drc --read_settings_files=on --write_settings_files=off aes_algorithm_one -c aes_algorithm_one
+
+
+
